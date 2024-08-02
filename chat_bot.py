@@ -68,21 +68,21 @@ add_selectbox = st.sidebar.selectbox(
     ("Email", "Home phone", "Mobile phone")
 )
 
-# Using "with" notation
-with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
+# # Using "with" notation
+# with st.sidebar:
+#     add_radio = st.radio(
+#         "Choose a shipping method",
+#         ("Standard (5-15 days)", "Express (2-5 days)")
+#     )
 
 
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
+# with st.sidebar:
+#     with st.echo():
+#         st.write("This code will be printed to the sidebar.")
 
-    with st.spinner("Loading..."):
-        time.sleep(5)
-    st.success("Done!")
+#     with st.spinner("Loading..."):
+#         time.sleep(5)
+#     st.success("Done!")
 
 
 if __name__ == "__main__":
